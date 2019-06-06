@@ -22,20 +22,7 @@ export default class ChromeBoisDomain extends Component {
   }
 
   resizeKey = (event) => {
-   // function resize2(x){
-   if (event.key == 'a'){
-     return resize('+')
-   }else if(event.key == 's'){
-     return resize('-')
-   }
-
-   // }
-    /* TODO: Add an event listener to the `<canvas>` element to capture when a key
-    /* is pressed. When a key is pressed, an event handler should invoke the the
-    /* provided `resize` function with a single argument of either '+' or '-'
-    /* if the key pressed was 'a', then it should call `resize` with '+'
-    /* if the key pressed was 's', then it should call `resize` with '-'
-     */
+    event.key == 'a' ? resize('+') : event.key == 's' ? resize('-') : alert('increase sprite size with a or s key')
   }
 
 
